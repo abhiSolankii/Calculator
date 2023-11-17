@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="./calculator.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a
+          class="logo"
+          href="#"
+          style="
+            font-size: 50px;
+            color: black;
+            font-weight: 700;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            text-decoration: none;
+          "
+        >
+          <img
+            src="./images/logo.png"
+            alt="Logo"
+            width="60px"
+            height="60px"
+            class="d-inline-block align-text-top"
+          />
+          Calculator
+        </a>
+      </div>
+    </nav>
+    <div class="body">
+      <div class="left-side-margin"></div>
+      <div class="main">
+        <div class="box">
+          <div class="box-contents">
+            <div class="input-1">
+              <span style="font-size: 4rem">Enter number:</span>
+              <input
+                type="text"
+                id="input-box-1"
+                class="input-box-1"
+                placeholder="Enter number..."
+              />
+            </div>
+            <div class="arithmetic-buttons">
+              <button class="arithmetic-button" id="+" onclick="signAdd()">
+                +
+              </button>
+              <button class="arithmetic-button" id="-" onclick="signSub()">
+                -
+              </button>
+              <button class="arithmetic-button" id="*" onclick="signMul()">
+                &#215;
+              </button>
+              <button class="arithmetic-button" id="/" onclick="signDiv()">
+                &#247;
+              </button>
+            </div>
+            <div class="input-2">
+              <span style="font-size: 4rem">Enter number:</span>
+              <input
+                type="text"
+                id="input-box-2"
+                class="input-box-2"
+                placeholder="Enter number..."
+              />
+            </div>
+            <div class="result">
+              <span style="font-size: 4rem">Result:</span>
+              <div style="display: flex; margin-left: 1rem">
+                <div class="display-result" id="display-result"></div>
+                <button
+                  class="calculate-button"
+                  id="calculate-button"
+                  onclick="calculate()"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side-margin"></div>
+    </div>
+  </body>
+</html>
